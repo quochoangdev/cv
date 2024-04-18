@@ -1,0 +1,78 @@
+.name {
+    font-weight  : 700;
+    font-size    : 38px;
+    margin-bottom: 20px;
+    color        : #343a40;
+}
+
+.desc {
+    font-weight  : 500;
+    margin-bottom: 16px;
+    font-size    : 20px;
+}
+
+.bl-projects {
+    display  : flex;
+    flex-wrap: wrap;
+    gap      : 10px;
+    padding  : 0 48px;
+
+    .project {
+        position       : relative;
+        display        : flex;
+        width          : 49%;
+        text-decoration: none;
+        cursor         : pointer;
+
+        .bl-img {
+            position        : absolute;
+            top             : 0;
+            left            : 0;
+            right           : 0;
+            bottom          : 0;
+            border-radius   : 6px;
+            background-color: rgba(33, 37, 41, 0.7);
+            z-index         : 1;
+            overflow        : hidden;
+            clip-path       : inset(0px round 6px);
+            transition      : clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+        }
+
+        .content {
+            position   : absolute;
+            z-index    : 2;
+            top        : 50%;
+            transform  : translateY(-50%);
+            color      : #fff;
+            font-weight: 300;
+            font-size  : 16px;
+            width      : 100%;
+            padding    : 0 20%;
+
+            .title {
+                display    : flex;
+                align-items: center;
+
+                .icon {
+                    font-size  : 10px;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .img {
+            display   : block;
+            clip-path : inset(0px round 6px);
+            transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+        }
+
+        &:hover .bl-img {
+            background-color: rgba(29, 128, 159, 0.9);
+            clip-path       : inset(10px round 6px);
+        }
+
+        &:hover .img {
+            clip-path: inset(10px round 6px);
+        }
+    }
+}

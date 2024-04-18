@@ -1,0 +1,92 @@
+.name {
+    font-weight  : 700;
+    font-size    : 38px;
+    margin-bottom: 20px;
+    color        : #343a40;
+}
+
+.wrapper {
+    display       : flex;
+    flex-direction: column;
+    color         : #34495e;
+
+
+    .one-company {
+        display      : flex;
+        margin-bottom: 30px;
+
+        .left {
+            flex: 1;
+
+            .title {
+                display        : flex;
+                align-items    : flex-end;
+                font-weight    : 600;
+                color          : var(--color-title);
+                margin-bottom  : 6px;
+                text-decoration: none;
+
+                &:hover {
+                    color          : var(--text-hover);
+                    text-decoration: underline;
+                }
+
+                .icon {
+                    width      : 16px;
+                    margin-left: 4px;
+                }
+            }
+
+            .role {
+                font-size    : 20px;
+                margin-bottom: 12px;
+
+            }
+
+            .bl-description {
+                font-size    : 16px;
+                margin-bottom: 8px;
+
+                .mark {
+                    display    : flex;
+                    align-items: center;
+                    font-size  : 16px;
+
+                    .icon-mark {
+                        color       : #ffc107;
+                        margin-right: 4px;
+                    }
+
+                    .link {
+                        color          : var(--color-title);
+                        text-decoration: none;
+                        font-weight    : 600;
+
+                        &:hover {
+                            color          : var(--text-hover);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .tx-style {
+                    font-style: italic;
+                }
+            }
+        }
+
+        .right {
+            width      : 192px;
+            color      : var(--color-title);
+            font-weight: 500;
+            font-size  : 16px;
+            text-align : right;
+
+            &:hover {
+                color: var(--text-hover);
+            }
+        }
+    }
+
+
+}

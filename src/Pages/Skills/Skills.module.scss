@@ -1,0 +1,128 @@
+.name {
+    font-weight  : 700;
+    font-size    : 38px;
+    margin-bottom: 20px;
+    color        : #343a40;
+}
+
+.desc {
+    font-weight  : 500;
+    margin-bottom: 16px;
+    font-size    : 20px;
+}
+
+.bl-languages {
+    display      : flex;
+    flex-wrap    : wrap;
+    gap          : 20px;
+    align-items  : center;
+    margin-bottom: 22px;
+
+    .language {
+        cursor: pointer;
+
+        &:hover {
+            color: var(--text-hover);
+        }
+    }
+
+    .javaScript {
+        font-size: 54px;
+        color    : #f0db4f;
+    }
+
+    .typeScript {
+        font-size: 48px;
+        color    : #007acc;
+    }
+
+    .reactJs {
+        font-size: 54px;
+        color    : #61dafb;
+    }
+
+    .nodeJs {
+        font-size: 48px;
+        color    : #5fa04e;
+    }
+
+    .nestJs {
+        font-size: 48px;
+        color    : #df234f;
+    }
+
+    .mongodb {
+        font-size: 48px;
+        color    : #4faa41;
+    }
+
+    .mysql {
+        font-size: 48px;
+        color    : #00618a;
+    }
+
+    .html5 {
+        font-size: 48px;
+        color    : #e54d26;
+    }
+
+    .css3 {
+        font-size: 48px;
+        color    : #3d8fc6;
+    }
+
+    .bootstrap {
+        font-size: 50px;
+        color    : #712cf9;
+    }
+
+    .github {
+        font-size: 48px;
+        color    : #181616;
+    }
+
+    .gitlab {
+        font-size: 48px;
+        color    : #E44229;
+    }
+
+    .redux {
+        font-size: 48px;
+        color    : #7748BC;
+    }
+
+    .tailwind {
+        font-size: 48px;
+        color    : #38bdf8;
+    }
+
+    .trello {
+        font-size: 52px;
+        color    : #0052cc;
+    }
+}
+
+.list-skill {
+    font-size: 16px;
+
+    .item {
+        display    : flex;
+        align-items: center;
+        font-weight: 500;
+
+        .icon {
+            font-size   : 16px;
+            color       : #3DAB62;
+            margin-right: 6px;
+        }
+
+        .strong {
+            font-weight: 600;
+        }
+    }
+
+    .item-show {
+        margin-left: 22px;
+        font-weight: 400;
+    }
+}

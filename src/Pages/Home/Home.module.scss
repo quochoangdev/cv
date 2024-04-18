@@ -1,0 +1,203 @@
+.wrapper {
+    width: 100%;
+
+    .heading {
+        z-index         : 1;
+        position        : fixed;
+        top             : 0;
+        left            : 0;
+        bottom          : 0;
+        width           : 272px;
+        background-color: var(--color-primary);
+        display         : flex;
+        flex-direction  : column;
+        align-items     : center;
+        justify-content : center;
+
+        .avatar {
+            margin-bottom: 16px;
+
+            img {
+                width        : 176px;
+                height       : 176px;
+                border-radius: 999px;
+                object-fit   : cover;
+                border       : 10px solid rgba(255, 255, 255, 0.4);
+                cursor       : pointer;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .navbar {
+            display       : flex;
+            flex-direction: column;
+            align-items   : center;
+
+            .itemSidebar {
+                width          : 240px;
+                height         : 42px;
+                display        : flex;
+                justify-content: center;
+
+                a {
+                    color         : rgba(255, 255, 255, .5);
+                    font-weight   : 600;
+                    font-size     : 18px;
+                    text-transform: uppercase;
+                    cursor        : pointer;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+
+                .active {
+                    color: #fff;
+                }
+            }
+
+
+        }
+    }
+
+    .content {
+        margin-left: 272px;
+
+        .renderSidebar {
+            padding  : 48px;
+            max-width: 1200px;
+
+            .block-2 {
+
+                margin: 114px 0;
+            }
+        }
+
+        .demo {
+            min-height: 1000px;
+        }
+
+        .hr {
+            background-color: rgba(0, 0, 0, .1);
+            width           : 100%;
+        }
+    }
+
+    .showImageFullscreen {
+        position        : relative;
+        position        : fixed;
+        z-index         : 2;
+        top             : 0;
+        left            : 0;
+        right           : 0;
+        bottom          : 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+
+        .close-image {
+            color          : #000;
+            position       : absolute;
+            top            : 0px;
+            right          : 0px;
+            width          : 100px;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            cursor         : pointer;
+
+            .icon {
+                color    : #fff;
+                font-size: 100px;
+
+                &:hover {
+                    color: var(--text-hover);
+                }
+            }
+        }
+
+        img {
+            width        : 600px;
+            height       : 600px;
+            border-radius: 999px;
+            object-fit   : cover;
+            border       : 1px solid rgba(255, 255, 255, 0.4);
+            cursor       : pointer;
+        }
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wrapper {
+
+        .heading {
+            position        : fixed;
+            top             : 0;
+            left            : 0;
+            width           : 100%;
+            height          : 60px;
+            background-color: var(--color-primary);
+
+            .avatar {
+                display: none;
+            }
+
+            .navbar {
+                display: none;
+                color  : #000;
+                width  : 80px;
+            }
+        }
+
+        .content {
+            margin-top : 60px;
+            margin-left: 0;
+
+            .ender-sidebar {
+                padding: 80px 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 739px) {
+    .wrapper {
+
+        .heading {
+            position        : fixed;
+            top             : 0;
+            left            : 0;
+            width           : 100%;
+            height          : 60px;
+            background-color: var(--color-primary);
+
+            .avatar {
+                display: none;
+            }
+
+            .navbar {
+                display: none;
+                color  : #000;
+                width  : 80px;
+            }
+        }
+
+        .content {
+            margin-left: 0;
+            margin-top : 60px;
+
+            .ender-sidebar {
+                padding: 80px 16px;
+
+                .block-2 {
+                    margin: 114px 0;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.name {
+    font-weight  : 700;
+    font-size    : 38px;
+    margin-bottom: 20px;
+    color        : #343a40;
+}
+
+
+.list {
+
+    .item {
+        font-size    : 16px;
+        margin-bottom: 4px;
+        margin-bottom: 8px;
+    }
+
+    .list-image {
+        margin-top: 16px;
+        display   : flex;
+        flex-wrap : wrap;
+        gap       : 6px;
+        cursor    : pointer;
+
+        .img {
+            max-width : 200px;
+            box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
