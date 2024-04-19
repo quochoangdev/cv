@@ -34,6 +34,11 @@
 
     .ctx {
         flex: 1;
+        
+        .strong{
+            font-weight: 300;
+            color: red;
+        }
     }
 }
 

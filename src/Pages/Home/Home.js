@@ -14,7 +14,7 @@ const cx = classNames.bind(styles);
 const Home = () => {
   // useEffect(() => {
   //   window.scrollTo({
-  //     top: 0,
+  //     top: 0,s
   //   });
   // }, []);
   const [isShowImage, setIsShowImage] = useState(false);

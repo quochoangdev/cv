@@ -73,7 +73,7 @@ const Skills = () => {
             <IoLogoCss3 className={cx("language", "css3")} />
           </button>
         </Tippy>
-        <Tippy content="Tailwind">
+        <Tippy content="TailwindCSS">
           <button>
             <SiTailwindcss className={cx("language", "tailwind")} />
           </button>

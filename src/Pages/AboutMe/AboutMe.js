@@ -44,8 +44,8 @@ const AboutMe = () => {
           <RiReactjsFill className={cx("icon", "cl-react")} />
         </span>
         <span className={cx("ctx")}>
-          <strong>Front-end:</strong> I can work with
-          <strong>
+          <strong className={cx("strong")}>Front-end:</strong> I can work with
+          <strong className={cx("strong")}>
             {" "}
             ReactJS (NextJS, Hook, Redux Toolkit), Material UI, TailwindCSS,
             Bootstrap, Axios, and other technologies.
@@ -57,7 +57,7 @@ const AboutMe = () => {
           <BsFillHexagonFill className={cx("icon", "cl-node")} />
         </span>
         <span className={cx("ctx")}>
-          <strong>Back-end:</strong> I can work with
+          <strong className={cx("strong")}>Back-end:</strong> I can work with
           <strong>
             {" "}
             Node.JS, NestJS, TypeScript, ExpressJS, MongoDB, MySQL, and other

@@ -12,10 +12,16 @@ const Experience = () => {
       <div className={cx("wrapper")}>
         {/* <div className={cx("one-company")}>
           <div className={cx("left")}>
-            <a href="/" className={cx("title")}>
-              Company
+            <div className={cx("title")}>
+              <a
+                className={cx("text")}
+                href="https://meta-technology.com.vn/"
+                target="black"
+              >
+                Meta Technology
+              </a>
               <FaExternalLinkAlt className={cx("icon")} />
-            </a>
+            </div>
             <h3 className={cx("role")}>Back-end Internship</h3>
             <div className={cx("bl-description")}>
               <div className={cx("mark")}>
@@ -70,14 +76,16 @@ const Experience = () => {
         {/* Meta Technology */}
         <div className={cx("one-company")}>
           <div className={cx("left")}>
-            <a
-              href="https://meta-technology.com.vn/"
-              target="black"
-              className={cx("title")}
-            >
-              Meta Technology
+            <div className={cx("title")}>
+              <a
+                className={cx("text")}
+                href="https://meta-technology.com.vn/"
+                target="black"
+              >
+                Meta Technology
+              </a>
               <FaExternalLinkAlt className={cx("icon")} />
-            </a>
+            </div>
             <h3 className={cx("role")}>Backend - Internship</h3>
             <div className={cx("bl-description")}>
               <div className={cx("mark")}>
